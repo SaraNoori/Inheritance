@@ -28,4 +28,9 @@ public class Student
         this.gpa = gpa;
         this.idNum = idNum;
     }
+
+    public String toString()
+    {
+        return "STUDENT " + getFirstName() + " " + getLastName() + ": " + getIDNum();
+    }
 }

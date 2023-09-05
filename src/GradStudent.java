@@ -9,19 +9,10 @@ public class GradStudent extends Student
     private String office;
     private String officeHours;   
 
+
     // getters and setters
-    public String getFirstName() { return firstName; }
-    public void setFirstName(String name) { firstName = name; }
-
-    public String getLastName(){ return lastName; }
-    public void setLastName(String name) { lastName = name; }
-
-    public float getGPA() { return gpa; }
-    public void setGPA(float newGPA) { gpa = newGPA; }
-
     @Override public String getIDNum() { return "GR-" + super.getIDNum();}
-    public void setIDnum(String newID) { idNum = newID; }
-
+    public void setIDnum(String newID) { super.setIDNum(newID); }
 
     public String getOffice() { return office; }
     public void setOffice(String newOffice) { office = newOffice; }
@@ -35,5 +26,10 @@ public class GradStudent extends Student
         super(firstName, lastName, gpa, idNum);
         this.office = office;
         this.officeHours = officeHours;
+    }
+
+    @Override public String toString()
+    {
+        return "GRAD " + super.toString() + "; Office: " + office + ": " + officeHours; 
     }
 }
