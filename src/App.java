@@ -24,9 +24,10 @@ public class App {
         list.add(gs1);
         list.add(gs2);
 
-        for (Object student : list)
+        for (Student student : list)
         {
             System.out.println(student);
+            System.out.println(student.getSerialData());
         }
 
     }

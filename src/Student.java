@@ -1,4 +1,4 @@
-public class Student 
+public class Student implements Serializable
 {
     // instance data
     private String firstName;
@@ -18,6 +18,12 @@ public class Student
 
     public String getIDNum() { return idNum; }
     public void setIDNum(String newID) { idNum = newID; }
+
+    // implementing Serializable methods
+    public String getSerialData()
+    {
+        return firstName + "," + lastName + "," + gpa;
+    }
 
 
     // --Constructor--
