@@ -1,4 +1,4 @@
-public class Student implements Serializable
+public abstract class Student implements Serializable
 {
     // instance data
     private String firstName;
@@ -18,6 +18,11 @@ public class Student implements Serializable
 
     public String getIDNum() { return idNum; }
     public void setIDNum(String newID) { idNum = newID; }
+
+
+    // abstract methods
+    public abstract String getDegree();
+
 
     // implementing Serializable methods
     public String getSerialData()

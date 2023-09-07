@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Student s1 = new Student("bob", "bobby", 3.5f, "821");
-        Student s2 = new Student("tim", "timmy", 2.1f, "234");
+        Student s1 = new UnderGradStudent("bob", "bobby", 3.5f, "821");
+        Student s2 = new UnderGradStudent("tim", "timmy", 2.1f, "234");
 
         GradStudent gs1 = new GradStudent("bobetha", "bob", 2.4f, "123","The office", "the hours");
         GradStudent gs2 = new GradStudent("timmetha", "tim", 1.3f, "456", "other office", "other hours");
@@ -28,6 +28,7 @@ public class App {
         {
             System.out.println(student);
             System.out.println(student.getSerialData());
+            System.out.println(student.getDegree());
         }
 
     }

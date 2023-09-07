@@ -28,6 +28,11 @@ public class GradStudent extends Student
         this.officeHours = officeHours;
     }
 
+    public String getDegree()
+    {
+        return "graduate degree";
+    }
+
     @Override public String toString()
     {
         return "GRAD " + super.toString() + "; Office: " + office + ": " + officeHours; 
